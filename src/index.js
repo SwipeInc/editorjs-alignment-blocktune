@@ -40,6 +40,7 @@ class AlignmentBlockTune {
    */
   constructor({ api, data, config, block }) {
     console.log("++++Using forked version++++");
+    console.log("++++Data++++", data);
     this.api = api;
     this.block = block;
     /**
