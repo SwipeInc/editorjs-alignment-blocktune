@@ -21,12 +21,12 @@ class AlignmentBlockTune {
 
   getAlignment() {
     if (
-      !!this.settings?.blocks &&
+      this.settings?.blocks &&
       this.settings.blocks.hasOwnProperty(this.block.name)
     ) {
       return this.settings.blocks[this.block.name];
     }
-    if (!!this.settings?.default) {
+    if (this.settings?.default) {
       return this.settings.default;
     }
     return AlignmentBlockTune.DEFAULT_ALIGNMENT;
