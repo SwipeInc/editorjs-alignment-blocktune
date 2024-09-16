@@ -39,6 +39,7 @@ class AlignmentBlockTune {
    * @param block tuneに設定されてるblock
    */
   constructor({ api, data, config, block }) {
+    console.log("++++Using forked version++++");
     this.api = api;
     this.block = block;
     /**
